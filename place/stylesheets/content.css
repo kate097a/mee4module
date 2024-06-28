@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    cursor: none;
+}
+
+
+@font-face {
+    font-family: "BowlbyOne";
+    src: url("../fonts/BowlbyOne-Regular.ttf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+  }
+
+  
+.model {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+
+.fixedMenu {
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 43434343;
+    pointer-events: none;
+}
+
+
+.fixedText {
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    z-index: 32222323232;
+    color: rgb(0, 0, 0);
+    font-family: "Inter";
+}
+
+.navBtn {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    transition: all 1s ;
+    z-index: 9999999999999999999999999999;
+    pointer-events: all;
+    background-color: black;
+}
+
+.hovered {
+    width: 3.5vw;
+    height: 3.5vw;
+    transition: all 1s ;
+}
+
+#main {
+    left: 20vw;
+    top: 10vw
+}
+
+#place { 
+    left: 80vw;
+    top: 22vw
+}
+
+#book { 
+    left: 20vw;
+    top: 32vw
+}
+
+#posters { 
+    left: 75vw;
+    top: 10vw
+}
+
+
+.cursorDot {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    transition: all 300;
+    z-index: 43434342;
+    
+}
+
+.noise {
+    position: absolute;
+    height:100vh; 
+    width: 100%;
+    background-image: url("../img/noise.gif");
+    z-index: 9999999999999999999999;
+    opacity: 0.1;
+    backdrop-filter: invert(70%);
+    pointer-events: none;
+    top: 0;
+}
+
+
+.cursorDot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+    background-color: black;
+    border-radius: 100%;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    border-left: 0.1vw black solid;
+    border-right: 0.1vw black solid;
+    padding: 2vw 2vw 5vw 4vw;
+    backdrop-filter: blur(15px);
+    filter:grayscale(0);
+    position: absolute;
+    height: 100%;
+}
+
+.menu p {
+    font-family: inter;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 12vw;
+    width: 27vw;
+    word-break: break-all;
+    font-family: inter;
+    line-height: 9.5vw;
+    margin-bottom: 3vw;
+    letter-spacing: -0.5vw;
+    font-family: "BowlbyOne";
+    margin-top: 2vw;
+}
+
+.menuTip:hover {
+   letter-spacing: 1.5px;
+}
+
+span {
+    letter-spacing: 0;
+}
+
+
+.concertHall {
+    background-color: white;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+}
+
+
+.imgSlider {
+    width: 100vw;
+}
+
+.scrol {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.imgInSlider {
+    width: 75vw;
+    height: 50vw;
+    margin-left: 30vw;
+    margin-top: -1vw;
+}
+
+.scrolling {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+    animation: scr 17s infinite ease-in-out;
+    transition: all 0.3s;
+}
+
+.scrolling:hover {
+    animation: scr 40s infinite ease-in-out;
+}
+
+@keyframes scr {
+    0% {margin-top: -280vw;}
+    50% {margin-top: 0vw;}
+    100% {margin-top: -280vw;}
+}
+
+.autoScroll {
+    width: 5vw;
+    height: 2vw;
+    position: absolute;
+    background-color: black;
+    border-radius: 0%;
+    border: none;
+    margin-left: 1vw;
+}
